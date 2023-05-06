@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Spinner from "../layout/Spinner";
 
 const GITHUB_URL = "https://api.github.com";
 
@@ -26,7 +27,7 @@ function UserResults() {
           ))}</div>
       )
   } else {
-    return <h2>Loading...</h2>
+    return <Spinner />
   }
 }
 
